@@ -1,1 +1,25 @@
-# Two_Input_NOR_Gate
+# Two_input_NOR_gate
+Design and Analysis of two input N gate in 28nm CMOS technology using synopsys custom compiler™️
+## Table of Contents
+* [Abstract](#Abstract)
+* [Tools used](#Tools-used)
+* [Reference circuit diagram](#reference-circuit-diagram)
+* [Reference circuit waveform](#reference-circuit-waveform)
+* [Circuit designing](#circuit-designing)
+  * [Schematic](#schematic)
+  * [Symbol](#symbol)
+* [Test Bench](#test-bench)
+  * [Test Bench Schematic](#test-bench-schematic) 
+  * [Params set for input voltage source A](#params-set-for-input-voltage-source-A)
+  * [Params set for input voltage source B](#Params-set-for-input-voltage-source-B)
+  * [Model files inclusion](#Model-files-inclusion)
+  * [Transient Settings](#transient-settings)
+  * [waveform](#waveform)
+  * [Netlist](#netlist)
+  * [Primewave Definition](#primewave-definition)
+  * [Primewave Log File](#primewave-log-file)
+* [Conclusion](#conclusion)
+* [Acknowledments](#acknowledgements)
+* [Author](#author)
+* [References](#references)
+*
