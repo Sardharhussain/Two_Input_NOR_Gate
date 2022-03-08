@@ -34,3 +34,12 @@ The parallel connection of the two n-channel transistors between GND and the gat
 
 ## Tools used
 * ESIM IC Design Platform.
+
+## Reference circuit diagram
+<!-- ![reference circuit diagram](https://user-images.githubusercontent.com/100688517/157284841-081af758-78c9-48f3-8cec-cfd587f802d3.png)-->
+![image](https://user-images.githubusercontent.com/100688517/157284841-081af758-78c9-48f3-8cec-cfd587f802d3.png)
+
+## Reference circuit waveform
+<!-- ![Reference circuit waveform](https://user-images.githubusercontent.com/100688517/157285413-7bacbab8-cf8c-4d02-8e8a-988ecac96cf2.png)-->
+![image](https://user-images.githubusercontent.com/100688517/157285413-7bacbab8-cf8c-4d02-8e8a-988ecac96cf2.png)
+
