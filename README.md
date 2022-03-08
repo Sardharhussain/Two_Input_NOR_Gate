@@ -126,9 +126,7 @@ Thus, the two input NOR gate is being designed and simulated with the 180nm CMOS
 * [Mixed signal circuit design Hackathon using eSim](https://hackathon.fossee.in/esim/)
 
 ## Author
- * Sudheer kumar pabbathi,Third year in Bachelor of Engineering in Electronics and Communication Engineering, Chaitanya Bharathi Institute of Electronics, Hyderabad-500075.
+ * Sardhar Hussain Shaik, Bachelor of Technology in Electronics and Communication Engineering, Ellenki College of Engineering and Technology  Hyderabad-502319.
  
 ## References
-* [John Wawrzynek, CMOS Implementation Technologies (feature size ~ 28nm)](https://inst.eecs.berkeley.edu/~cs150/sp12/agenda/lec/lec09-CMOS.pdf)
-
-
+* [CMOS NOR Implementation Technologies](https://www.ques10.com/p/26345/draw-2-input-cmos-nor-gate-and-using-equivalent--1/?)
