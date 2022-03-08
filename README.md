@@ -130,3 +130,4 @@ Thus, the two input NOR gate is being designed and simulated with the 180nm CMOS
  
 ## References
 * [CMOS NOR Implementation Technologies](https://www.ques10.com/p/26345/draw-2-input-cmos-nor-gate-and-using-equivalent--1/?)
+* [CMOS NOR Implementation Technologies](https://tams.informatik.uni-hamburg.de/applets/hades/webdemos/05-switched/40-cmos/nor.html)
