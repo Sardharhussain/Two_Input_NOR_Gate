@@ -16,8 +16,6 @@ Design and Analysis of two input NOR gate in 180nm CMOS technology using ESIM co
   * [Transient Settings](#transient-settings)
   * [waveform](#waveform)
   * [Netlist](#netlist)
-  * [Primewave Definition](#primewave-definition)
-  * [Primewave Log File](#primewave-log-file)
 * [Conclusion](#conclusion)
 * [Acknowledments](#acknowledgements)
 * [Author](#author)
@@ -85,6 +83,52 @@ The parallel connection of the two n-channel transistors between GND and the gat
 
 ![Waveforms](https://user-images.githubusercontent.com/100688517/157294063-0be847d8-3492-42a3-b8cb-44179e66f82a.png)
 
+* **Netlist**
+    - The netlist cir.out is generated at our local path at where we created project.
+    - You can see below.
 
+```
+* d:\esim\nor_gate\nor_gate.cir
+.include NMOS-180nm.lib
+.include PMOS-180nm.lib
+m2 net-_m2-pad1_ a net-_m2-pad3_ net-_m2-pad3_ CMOSP
+m3 vout b net-_m2-pad1_ net-_m2-pad1_ CMOSP
+v1 net-_m2-pad3_ gnd  dc 5
+v2  b gnd pulse(0 3.3 1u 0.1n 0.1n 4u 8u)
+v3  a gnd pulse(0 3.3 1u 0.1n 0.1n 2u 4u)
+* u1  a plot_v1
+* u2  b plot_v1
+m1 vout a net-_m1-pad3_ net-_m1-pad3_ CMOSN
+m4 vout b net-_m1-pad3_ net-_m1-pad3_ CMOSN
+* u3  vout plot_v1
+.tran 0.1e-7 20e-06 0e-00
+* Control Statements
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(a)
+plot v(b)
+plot v(vout)
+.endc
+.end
+
+```
+## Conclusion
+Thus, the two input NOR gate is being designed and simulated with the 180nm CMOS technology using ESIM compiler with 4 MOSFETs.
+
+## Acknowledgements
+
+* FOSSEE TEAM,IIT BOMBAY.
+* Mr.[Kunal Ghosh](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836) Co-Founder at VLSI System Design(VSD).
+* Sumanto Kaur,eSim Team,FOSSEE.
+* Madhuri Kada,eSim Team,FOSSEE.
+* [Mixed signal circuit design Hackathon using eSim](https://hackathon.fossee.in/esim/)
+
+## Author
+ * Sudheer kumar pabbathi,Third year in Bachelor of Engineering in Electronics and Communication Engineering, Chaitanya Bharathi Institute of Electronics, Hyderabad-500075.
+ 
+## References
+* [John Wawrzynek, CMOS Implementation Technologies (feature size ~ 28nm)](https://inst.eecs.berkeley.edu/~cs150/sp12/agenda/lec/lec09-CMOS.pdf)
 
 
