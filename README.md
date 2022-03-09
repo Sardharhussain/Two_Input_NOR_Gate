@@ -1,5 +1,5 @@
 # Two_input_NOR_gate
-Design and Analysis of two input NOR gate in 180nm CMOS technology using ESIM compiler™️
+Design and Analysis of two input NOR gate in 180nm CMOS technology using ESIM compiler
 ## Table of Contents
 * [Abstract](#Abstract)
 * [Truth Table](#Truth-Table)
