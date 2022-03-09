@@ -1,0 +1,24 @@
+* d:\esim\nor_gate\nor_gate.cir
+.include NMOS-180nm.lib
+.include PMOS-180nm.lib
+m2 net-_m2-pad1_ a net-_m2-pad3_ net-_m2-pad3_ CMOSP
+m3 vout b net-_m2-pad1_ net-_m2-pad1_ CMOSP
+v1 net-_m2-pad3_ gnd  dc 5
+v2  b gnd pulse(0 3.3 1u 0.1n 0.1n 4u 8u)
+v3  a gnd pulse(0 3.3 1u 0.1n 0.1n 2u 4u)
+* u1  a plot_v1
+* u2  b plot_v1
+m1 vout a net-_m1-pad3_ net-_m1-pad3_ CMOSN
+m4 vout b net-_m1-pad3_ net-_m1-pad3_ CMOSN
+* u3  vout plot_v1
+.tran 0.1e-7 20e-06 0e-00
+* Control Statements
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(a)
+plot v(b)
+plot v(vout)
+.endc
+.end
